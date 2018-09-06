@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  main-mongodb:
+     build: mongodb
+     ports:
+        - 25000:27017
+  rabbitmq:
+    ports:
+      - 5672:5672
